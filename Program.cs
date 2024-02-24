@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace ShapeDrawer
 {
     class Program
@@ -52,27 +53,50 @@ namespace ShapeDrawer
         static void DrawTriangle()
         {
             Console.WriteLine("Drawing a triangle:");
-            Console.WriteLine("   /\\");
-            Console.WriteLine("  /  \\");
-            Console.WriteLine(" /____\\");
+
+             for(int i = 0; i < 7; i++)
+            {
+                for(int j = 7; j > 0; j--)
+                {
+                    if(i >= j)
+                    {
+                        System.Console.Write("* ");
+                    }else 
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+               System.Console.WriteLine();
+            }
+
+        
         }
 
         static void DrawSquare()
         {
             Console.WriteLine("Drawing a square:");
-            Console.WriteLine(" ______");
-            Console.WriteLine("|      |");
-            Console.WriteLine("|      |");
-            Console.WriteLine("|______|");
+              for(int i = 0; i < 10; i++)
+            {
+                for(int j = 0; j < 10; j++)
+                {
+                    System.Console.Write("* ");
+                }
+                System.Console.WriteLine();
+            }
+
         }
 
         static void DrawRectangle()
         {
             Console.WriteLine("Drawing a rectangle:");
-            Console.WriteLine(" ___________");
-            Console.WriteLine("|           |");
-            Console.WriteLine("|           |");
-            Console.WriteLine("|___________|");
+            for(int i = 0; i < 7; i++)
+            {
+                for(int j = 0; j < 15; j++)
+                {
+                    System.Console.Write("* ");
+                }
+                System.Console.WriteLine();
+            }
         }
 
     }
