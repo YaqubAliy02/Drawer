@@ -40,4 +40,4 @@ Once the loop ends, the program prints a "Thank you" message indicating the term
  This code defines the DrawRectangle() method, responsible for drawing a square shape on the console.
 
 # 7. Demo 
- ![draw5](/assets/images/draw6.png)
+ ![draw5](/assets/images/Animation.gif)
